@@ -1,6 +1,7 @@
 # Documentation
 
 - [Architecture](architecture/README.md): repository boundaries and data flow.
+- [Snowflake contracts](architecture/snowflake-contracts.md), [security boundaries](architecture/security-boundaries.md), and [strategy lifecycle](architecture/strategy-lifecycle.md): implementable cross-repository rules.
 - [Development](development/README.md): issue-to-PR workflow.
 - [Operations](operations/README.md): deployment and incident boundaries.
 - [ADRs](adr/README.md): durable cross-repository decisions.

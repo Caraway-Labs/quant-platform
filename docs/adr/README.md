@@ -10,3 +10,4 @@ ADRs record cross-repository decisions and their consequences. Use [the template
 | [0004 Execution isolation](0004-execution-isolation-and-broker-security-boundary.md) | Accepted |
 | [0005 Paper-first execution](0005-paper-first-execution-and-live-promotion.md) | Accepted |
 | [0006 Strategy lifecycle and risk authority](0006-model-strategy-lifecycle-and-risk-authority.md) | Accepted |
+| [0007 Contract versioning and revision policy](0007-contract-versioning-and-revision-policy.md) | Accepted |

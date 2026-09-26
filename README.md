@@ -42,6 +42,8 @@ For a new repository, update [repositories.yaml](repositories.yaml), this map, [
 
 ## Guidance
 
+Start with the [system architecture](docs/architecture/system-architecture.md), [Snowflake contracts](docs/architecture/snowflake-contracts.md), [security boundaries](docs/architecture/security-boundaries.md), [strategy lifecycle](docs/architecture/strategy-lifecycle.md), and [observability and audit standard](docs/operations/observability-and-audit.md) for EPIC #2 implementation boundaries.
+
 - [Documentation](docs/README.md), [architecture](docs/architecture/README.md), [development](docs/development/README.md), [operations](docs/operations/README.md)
 - [Engineering standards](standards/README.md)
 - [Shared agent skills](skills/README.md) and [reusable prompts](prompts/README.md)
