@@ -1,0 +1,5 @@
+* [Home](Home)
+* [Personal Investor Operating Context](Personal-Investor-Operating-Context)
+* [Repository and Backlog Map](Repository-and-Backlog-Map)
+* [Strategy Red Team](Strategy-Red-Team)
+* [AI/ML Strategy Proposals](AI-ML-Strategy-Proposals)
