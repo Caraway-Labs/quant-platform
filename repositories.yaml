@@ -1,0 +1,54 @@
+schema_version: 1
+repositories:
+  - name: quant-platform
+    github: Caraway-Labs/quant-platform
+    versioning: independent
+    purpose: Cross-repository governance and orchestration
+    architectural_responsibility: Architecture, standards, ADRs, prompts, shared agent guidance, and repository routing
+    runtime_responsibility: None; no trading runtime
+    broker_credentials_allowed: false
+    trade_submission_allowed: false
+    authority_condition: not_applicable
+    produces: [repository catalog, governance guidance, architecture decisions]
+    consumes: [cross-repository requirements]
+    status: active
+    production_status: not_verified
+  - name: quant-data
+    github: Caraway-Labs/quant-data
+    versioning: independent
+    purpose: Trustworthy point-in-time financial data
+    architectural_responsibility: Ingestion, normalization, validation, lineage, and Snowflake publication
+    runtime_responsibility: Data pipelines; no trading decisions
+    broker_credentials_allowed: false
+    trade_submission_allowed: false
+    authority_condition: not_applicable
+    produces: [versioned validated point-in-time data contracts]
+    consumes: [external financial data]
+    status: active
+    production_status: not_verified
+  - name: quant-research
+    github: Caraway-Labs/quant-research
+    versioning: independent
+    purpose: Strategy and model research
+    architectural_responsibility: Features, backtesting, training, evaluation, experiment tracking, and model approval
+    runtime_responsibility: Research workflows; no live broker authority
+    broker_credentials_allowed: false
+    trade_submission_allowed: false
+    authority_condition: not_applicable
+    produces: [approved strategy and model outputs]
+    consumes: [point-in-time data contracts]
+    status: active
+    production_status: not_verified
+  - name: quant-execution
+    github: Caraway-Labs/quant-execution
+    versioning: independent
+    purpose: Controlled portfolio and order execution
+    architectural_responsibility: Deterministic portfolio construction, risk veto, broker integration, reconciliation, and audit
+    runtime_responsibility: Paper execution by default; live execution only after explicit promotion and configuration
+    broker_credentials_allowed: true
+    trade_submission_allowed: true
+    authority_condition: Paper trading by default; live credentials and trades require explicit human promotion and separate configuration
+    produces: [orders, fills, positions, audit records]
+    consumes: [approved strategy and model outputs, risk policy, market data contracts]
+    status: active
+    production_status: not_verified

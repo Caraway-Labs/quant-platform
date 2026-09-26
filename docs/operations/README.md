@@ -1,0 +1,3 @@
+# Operations
+
+This repository records cross-repository operational policy; runbooks and deployment commands belong to the owning child repository. Treat paper trading as the default. Any live promotion requires explicit human approval, configuration, credential isolation in execution, and a rollback path. Execution must retain risk-veto and reconciliation evidence. An incident involving data correctness or trading authority should identify the owning repository, affected contract versions, time window, and audit records before remediation. See [security](../../standards/security.md) and [ADR 0005](../adr/0005-paper-first-execution-and-live-promotion.md).

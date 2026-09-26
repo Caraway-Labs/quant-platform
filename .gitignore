@@ -1,0 +1,39 @@
+/quant-data/
+/quant-research/
+/quant-execution/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+
+# Python and local tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local output
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
